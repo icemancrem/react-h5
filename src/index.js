@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+// import Route from './router/'
+// const render = Component => {
+//   ReactDOM.render(
+//     <Component></Component>,
+//     document.getElementById('root')
+//   )
+// }
+// console.log(Route);
+// render(App)
 ReactDOM.render(
   <React.StrictMode>
     <App />
