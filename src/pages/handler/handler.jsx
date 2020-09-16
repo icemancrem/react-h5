@@ -1,6 +1,6 @@
 import React from 'react'
 import { DatePicker, List } from 'antd-mobile';
-import HandlerList from '../../components/ListForHandler/index'
+import HandlerList from 'components/ListForHandler/index'
 // import enUs from 'antd-mobile/lib/date-picker/locale/en_US';
 
 const nowTimeStamp = Date.now();

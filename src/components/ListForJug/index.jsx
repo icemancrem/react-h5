@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './index.less'
-import { Button, List } from 'antd-mobile'
-import { Link } from 'react-router-dom'
+import {  List } from 'antd-mobile'
 const Item = List.Item
 // function ListHeader(props) {
 //     return 
@@ -54,7 +53,7 @@ class ListHandler extends Component {
     render() {
         return <main className="Content">
                 {this.state.arrayList.map((item, index) =>
-                    <List key={index} renderHeader={() => <div className="header"><i className="title">{item.title}（{item.count}）</i><Link to={`/handlerJug?id=${item.id}`}> <Button size={"large"} inline={true} type={"warning"} className="fr">故障判定</Button></Link></div>}>
+                    <List key={index} renderHeader={() => <div className="header"><i className="title">{item.title}（{item.count}）</i></div>}>
                         <Item extra={'extra content'}>基站地址：</Item>
                         <Item extra={'extra content'}>故障时间：</Item>
                         <Item extra={'extra content'}>基站类别：</Item>

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 // import {Link} from 'react-router-dom'
 import {Grid} from 'antd-mobile'
 import './home.css'
-import MeauImg from '../../img/1600158854838.jpg'
+import MeauImg from 'assert/img/1600158854838.jpg'
 const data = [
     {
         icon: MeauImg,
@@ -35,7 +35,7 @@ export default class Home extends Component {
     }
     render() {
         return  <div>
-                    <img src={require("../../img/1600158956870.jpg")} alt=""/>
+                    <img src={require("assert/img/1600158956870.jpg")} alt=""/>
                     <Grid data={data} activeStyle={false} columnNum={2} onClick={ el => this.go(el.path)}></Grid>
                 </div>
     }
